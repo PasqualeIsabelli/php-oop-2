@@ -9,15 +9,17 @@
     protected $immagine;
     protected $peso;
     protected $ingredienti;
+    protected $categoria;
 
     // Construct
-    function __construct(string $_marca, string $_prezzo, string $_descrizione, string $_immagine, string $_peso, string $_ingredienti) {
+    function __construct(string $_marca, string $_prezzo, string $_descrizione, string $_immagine, string $_peso, string $_ingredienti, string $_categoria) {
       $this->marca = $_marca;
       $this->prezzo = $_prezzo;
       $this->descrizione = $_descrizione;
       $this->immagine = $_immagine;
       $this->peso = $_peso;
       $this->ingredienti = $_ingredienti;
+      $this->categoria = $_categoria;
     }
 
     // Methods
@@ -43,6 +45,10 @@
 
     public function fetchIngredienti() {
       return $this->ingredienti;
+    }
+
+    public function fetchCategoria() {
+      return $this->categoria;
     }
   }
 

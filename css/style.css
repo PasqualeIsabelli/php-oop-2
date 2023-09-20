@@ -30,4 +30,11 @@ nav {
 
 .width {
   width: calc(100% / 3 - 2rem);
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 5px;
 }

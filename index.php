@@ -1,6 +1,11 @@
 <?php
 require_once __DIR__ . '/db/db.php';
 
+
+$category = new Category("cane", "fa-solid fa-dog");
+$category = new Category("gatto", "fa-solid fa-cat");
+
+
 $project_title = 'PHP OOP 2';
 ?>
 
@@ -47,6 +52,7 @@ $project_title = 'PHP OOP 2';
         foreach ($foods as $food) { ?>
           <div class="card border rounded-0 mt-5 width">
             <img src="<?php echo ($food->fetchImmagine()) ?>" class="card-img-top h-100">
+            <div class="fs-1 icon"><i class="<?php echo ($food->fetchCategoria() === 'cane' ? 'fa-solid fa-dog' : 'fa-solid fa-cat') ?>" style="color: #000000;"></i></div>
             <div class="card-body">
               <h5 class="card-title text-center"><span class="fw-bold">Descrizione:</span> <?php echo ($food->fetchDescrizione()) ?></h5>
               <p class="card-text text-center"><span class="fw-bold">Marca:</span> <?php echo ($food->fetchMarca()) ?></p>
@@ -66,6 +72,7 @@ $project_title = 'PHP OOP 2';
         foreach ($games as $game) { ?>
           <div class="card border rounded-0 mt-5 width">
             <img src="<?php echo ($game->fetchImmagine()) ?>" class="card-img-top h-100">
+            <div class="fs-1 icon"><i class="<?php echo ($game->fetchCategoria() === 'cane' ? 'fa-solid fa-dog' : 'fa-solid fa-cat') ?>" style="color: #000000;"></i></div>
             <div class="card-body">
               <h5 class="card-title text-center"><span class="fw-bold">Descrizione:</span> <?php echo ($game->fetchDescrizione()) ?></h5>
               <p class="card-text text-center"><span class="fw-bold">Marca:</span> <?php echo ($game->fetchMarca()) ?></p>
@@ -85,6 +92,7 @@ $project_title = 'PHP OOP 2';
         foreach ($kennels as $kennel) { ?>
           <div class="card border rounded-0 mt-5 width">
             <img src="<?php echo ($kennel->fetchImmagine()) ?>" class="card-img-top h-100">
+            <div class="fs-1 icon"><i class="<?php echo ($kennel->fetchCategoria() === 'cane' ? 'fa-solid fa-dog' : 'fa-solid fa-cat') ?>" style="color: #000000;"></i></div>
             <div class="card-body">
               <h5 class="card-title text-center"><span class="fw-bold">Descrizione:</span> <?php echo ($kennel->fetchDescrizione()) ?></h5>
               <p class="card-text text-center"><span class="fw-bold">Marca:</span> <?php echo ($kennel->fetchMarca()) ?></p>

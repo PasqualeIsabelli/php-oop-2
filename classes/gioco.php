@@ -9,15 +9,17 @@
     protected $immagine;
     protected $materiale;
     protected $colore;
+    protected $categoria;
 
     // Construct
-    function __construct(string $_marca, string $_prezzo, string $_descrizione, string $_immagine, string $_materiale, string $_colore) {
+    function __construct(string $_marca, string $_prezzo, string $_descrizione, string $_immagine, string $_materiale, string $_colore, string $_categoria) {
       $this->marca = $_marca;
       $this->prezzo = $_prezzo;
       $this->descrizione = $_descrizione;
       $this->immagine = $_immagine;
       $this->materiale = $_materiale;
       $this->colore = $_colore;
+      $this->categoria = $_categoria;
     }
 
     // Methods
@@ -43,6 +45,10 @@
 
     public function fetchColore() {
       return $this->colore;
+    }
+
+    public function fetchCategoria() {
+      return $this->categoria;
     }
   }
 
