@@ -7,14 +7,12 @@
   require_once __DIR__ . '/../classes/cane.php';
   require_once __DIR__ . '/../classes/gatto.php';
 
-
-
   $foods = [
     new Food("Nature's", "20,00", "Crocchette per cani", "./img/crocchette cani.webp", "2 kg", "pollo", "cane"),
     new Food("Nature's", "3,00", "Cibo umido per cani", "./img/cibo umido cani.webp", "140 ml", "tonno e salmone", "cane"),
     new Food("Vet Line", "3,30", "Snack per cani", "./img/snack cani.webp", "80 gr", "cervo", "cane"),
-    new Food("Life Cat", "15.00", "Crocchette per gatti", "./img/crocchette gatti.webp", "1,5 kg", "tonno e gamberetti", "gatto"),
-    new Food("Life Cat", "6,50", "Cibo umido per gatti", "./img/cibo umido per gatti.webp", "6 X 85 gr", "ingredienti", "gatto"),
+    new Food("Life Cat", "15.00", "Crocchette per gatti", "./img/crocchette gatti.webp", "1,5 kg", "salmone", "gatto"),
+    new Food("Life Cat", "6,50", "Cibo umido per gatti", "./img/cibo umido per gatti.webp", "6 X 85 gr", "tonno e gamberetti", "gatto"),
     new Food("Alleva equilibrium", "22,00", "Crocchette per gatti", "./img/crocchette per gatti 2.webp", "1,5 kg", "pollo", "gatto"),
   ];
 
@@ -31,6 +29,4 @@
     new Kennel("Habitat", "99,99", "Cuccia per cane legno", "./img/cuccia cane.webp", "60W X 41L X 56H", "legno", "cane"),
     new Kennel("Mimì", "36,99", "Cuccia per gatto igloo", "./img/cuccia per gatti.webp", "35W X 35L X 43H", "stoffa", "gatto"), 
   ];
-
-  
 ?>

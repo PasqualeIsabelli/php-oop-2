@@ -86,7 +86,7 @@ $project_title = 'PHP OOP 2';
     </div>
 
     <div class="container">
-      <h2 class="fw-bold mt-5">Cibo</h2>
+      <h2 class="fw-bold mt-5">Cucce</h2>
       <div class="d-flex flex-wrap gap-5">
         <?php 
         foreach ($kennels as $kennel) { ?>
@@ -98,7 +98,7 @@ $project_title = 'PHP OOP 2';
               <p class="card-text text-center"><span class="fw-bold">Marca:</span> <?php echo ($kennel->fetchMarca()) ?></p>
               <p class="card-text text-center"><span class="fw-bold">Prezzo: €</span> <?php echo ($kennel->fetchPrezzo()) ?></p>
               <p class="card-text text-center"><span class="fw-bold">Dimensioni:</span> <?php echo ($kennel->fetchDimensione()) ?></p>
-              <p class="card-text text-center"><span class="fw-bold">MAteriali:</span> <?php echo ($kennel->fetchMateriale()) ?></p>
+              <p class="card-text text-center"><span class="fw-bold">Materiali:</span> <?php echo ($kennel->fetchMateriale()) ?></p>
             </div>
           </div>
         <?php } ?>

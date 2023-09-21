@@ -1,10 +1,8 @@
 <?php
-
   class Category {
     // Variables
     protected $specie;
     protected $icona;
-
 
     // Construct
     function __construct(string $_specie, string $_icona) {
@@ -12,9 +10,7 @@
       $this->icona = $_icona;      
     }
 
-
     // Methods
-
     /**
      * Get the value of specie
      */ 
